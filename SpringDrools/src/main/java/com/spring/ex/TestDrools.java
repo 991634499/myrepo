@@ -15,7 +15,7 @@ import com.spring.pojo.Person;
 @ContextConfiguration(locations="classpath:spring.xml")
 public class TestDrools {
 	
-	@KSession("kie-session")//此种方法不能在controller中使用
+	@KSession("kie-session")//此种方法不能在controller中使用mm
 	KieSession ksession;
 	@Autowired 
 	private KieBase kbase;//controller中通过kiebase获取session
@@ -37,4 +37,5 @@ public class TestDrools {
 		}
 		
 	}
+	public void runRuleOne(){}
 }
